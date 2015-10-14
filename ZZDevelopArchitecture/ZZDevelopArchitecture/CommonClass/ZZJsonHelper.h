@@ -17,8 +17,8 @@
  */
 
 
-#pragma mark - XYJsonParser
-@interface XYJsonParser : NSObject
+#pragma mark - ZZJsonParser
+@interface ZZJsonParser : NSObject
 @property(nonatomic, strong) Class clazz;   // 要转换成什么class
 @property(nonatomic, assign) BOOL single;   // 是否单个
 @property(nonatomic, copy) NSString *key; // key
@@ -31,109 +31,109 @@
 
 @end
 
-#pragma mark - XYJsonHelper
-@interface XYJsonHelper : NSObject
+#pragma mark - ZZJsonHelper
+@interface ZZJsonHelper : NSObject
 @end
 
-#pragma mark - XYJsonAutoBinding
+#pragma mark - ZZJsonAutoBinding
 /**
  * 通过 Protocol 免去NSArray 手动bind
- * @interface AudioPartModel : NSObject <XYJsonAutoBinding>
+ * @interface AudioPartModel : NSObject <ZZJsonAutoBinding>
  * @protocol AudioPartModel @end
  * @property(strong, nonatomic) NSArray	<AudioPartModel> *audioParts;
  *
  * 通过 Protocol 免去id 手动bind
- * @interface Man : NSObject <XYJsonAutoBinding> @end
+ * @interface Man : NSObject <ZZJsonAutoBinding> @end
  * @property(strong, nonatomic) Man *man;
  */
-@protocol XYJsonAutoBinding
+@protocol ZZJsonAutoBinding
 @end
 
 
-#pragma mark - NSObject (XYJsonHelper)
-@interface NSObject (XYJsonHelper)
+#pragma mark - NSObject (ZZJsonHelper)
+@interface NSObject (ZZJsonHelper)
 
 /**
  * @brief 如果model需要取父类的属性，那么需要自己实现这个方法，并且返回YES
  */
-+ (BOOL)uxy_hasSuperProperties;
++ (BOOL)hasSuperProperties;
 
 /**
  * @brief 映射好的字典 {jsonkey:property}
  */
-+ (NSDictionary *)uxy_jsonKeyPropertyDictionary;
++ (NSDictionary *)jsonKeyPropertyDictionary;
 
 /**
  * @brief 自己绑定jsonkey和property
  * @brief 如果没有自己绑定，默认为 {jsonkey:property} 【jsonkey=property】
  */
-+ (void)uxy_bindJsonKey:(NSString *)jsonKey toProperty:(NSString *)property;
++ (void)bindJsonKey:(NSString *)jsonKey toProperty:(NSString *)property;
 
 /**
  * @brief 解除不需要解析的属性
  */
-+ (void)uxy_removeJsonKeyWithProperty:(NSString *)property;
++ (void)removeJsonKeyWithProperty:(NSString *)property;
 
 // model to json
 /**
  * @brief 返回jsonString
  */
-- (NSString *)uxy_jsonString;
+- (NSString *)jsonString;
 
 /**
  * @brief 返回jsonData
  */
-- (NSData *)uxy_jsonData;
+- (NSData *)jsonData;
 
 /**
  * @brief 返回json字典, 不支持NSArray
  */
-- (NSDictionary *)uxy_jsonDictionary;
+- (NSDictionary *)jsonDictionary;
 
 // json to model
-- (id)uxy_toModel:(Class)classType;
-- (id)uxy_toModel:(Class)classType forKey:(NSString *)jsonKey;
-- (NSArray *)uxy_toModels:(Class)classType;
-- (NSArray *)uxy_toModels:(Class)classType forKey:(NSString *)jsonKey;
+- (id)toModel:(Class)classType;
+- (id)toModel:(Class)classType forKey:(NSString *)jsonKey;
+- (NSArray *)toModels:(Class)classType;
+- (NSArray *)toModels:(Class)classType forKey:(NSString *)jsonKey;
 
 @end
 
 
-#pragma mark - NSString (XYJsonHelper)
-@interface NSString (XYJsonHelper)
-- (id)uxy_jsonValue;
+#pragma mark - NSString (ZZJsonHelper)
+@interface NSString (ZZJsonHelper)
+- (id)jsonValue;
 @end
 
-#pragma mark - NSDictionary (XYJsonHelper)
-@interface NSDictionary (XYJsonHelper)
+#pragma mark - NSDictionary (ZZJsonHelper)
+@interface NSDictionary (ZZJsonHelper)
 @end
 
-#pragma mark - NSData (XYJsonHelper)
-@interface NSData (XYJsonHelper)
+#pragma mark - NSData (ZZJsonHelper)
+@interface NSData (ZZJsonHelper)
 
-- (id)uxy_jsonValue;
+- (id)jsonValue;
 
 /**
  *   @brief  通过key拿到json数据
  */
-- (id)uxy_jsonValueForKeyPath:(NSString *)key;
+- (id)jsonValueForKeyPath:(NSString *)key;
 
 /**
  *   @brief  通过key集合拿到对应的key的json数据字典
  */
-- (NSDictionary *)uxy_dictionaryForKeyPaths:(NSArray *)keys;
+- (NSDictionary *)dictionaryForKeyPaths:(NSArray *)keys;
 
 /**
  *   @brief  解析结果直接在parser的result字段里面，这个方法主要是为了提高解析的效率
  *   如果一个json中有多个key ex：{用户列表，商品列表、打折列表}那么传3个解析器进来就好了，不会对data进行三次重复的解析操作
  *   @param  parsers 要解析为json的解析器集合
  */
-- (void)uxy_parseToObjectWithParsers:(NSArray *)parsers;
+- (void)parseToObjectWithParsers:(NSArray *)parsers;
 @end
 
-#pragma mark - NSArray (XYJsonHelper)
-@interface NSArray (XYJsonHelper)
-- (NSArray *)uxy_toModels:(Class)classType;
+#pragma mark - NSArray (ZZJsonHelper)
+@interface NSArray (ZZJsonHelper)
+- (NSArray *)toModels:(Class)classType;
 @end
 
 
