@@ -166,6 +166,7 @@
 		5194EDB11B8DB52500471912 /* NSObject+LKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LKModel.m"; sourceTree = "<group>"; };
 		5194EDB71B8DB90000471912 /* LKDBHelper+ZZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LKDBHelper+ZZ.h"; sourceTree = "<group>"; };
 		5194EDB81B8DB90000471912 /* LKDBHelper+ZZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LKDBHelper+ZZ.m"; sourceTree = "<group>"; };
+		51A75F821BCF833C00977EF7 /* ZZDevelopArchitecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDevelopArchitecture.h; sourceTree = "<group>"; };
 		51A987C11B4D1F660019684F /* ZZDebugToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDebugToy.h; sourceTree = "<group>"; };
 		51A987C21B4D1F660019684F /* ZZDebugToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDebugToy.m; sourceTree = "<group>"; };
 		51A987C41B4D1FCF0019684F /* ZZAOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAOP.h; sourceTree = "<group>"; };
@@ -499,6 +500,7 @@
 				51AD6B001B43E29600819367 /* Extension */,
 				51AD6B211B43E3AB00819367 /* ZZDevelopPreDefine.h */,
 				51AD6B221B43E44C00819367 /* ZZDevelopMacros.h */,
+				51A75F821BCF833C00977EF7 /* ZZDevelopArchitecture.h */,
 			);
 			path = ZZDevelopArchitecture;
 			sourceTree = "<group>";
