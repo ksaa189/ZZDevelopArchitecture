@@ -6,14 +6,15 @@
 //  Copyright © 2015年 ZZ. All rights reserved.
 //
 
-#ifndef ZZDevelopArchitecture_h
-#define ZZDevelopArchitecture_h
+#import <Foundation/Foundation.h>
+#import "ZZ_Cache.h"
+#import "ZZ_CommonClass.h"
+#import "ZZ_Debug.h"
+#import "ZZ_Extension_Foudation.h"
+#import "ZZ_Extension_UI.h"
+#import "ZZ_Laroratory.h"
+#import "ZZ_UIModules.h"
 
-#import "ZZQuick_Predefine.h"   // 预编译
+@interface ZZDevelopArchitecture : NSObject
 
-#import "ZZQuick_Core.h"        // 基础类
-#import "ZZQuick_UI.h"          // 界面
-#import "ZZQuick_Event.h"       // 事件
-
-
-#endif /* ZZDevelopArchitecture_h */
+@end
