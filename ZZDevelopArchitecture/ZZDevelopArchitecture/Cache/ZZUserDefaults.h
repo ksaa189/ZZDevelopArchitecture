@@ -9,11 +9,11 @@
 #import "ZZDevelopPredefine.h"
 #import "ZZCacheProtocol.h"
 
-@interface XYUserDefaults : NSObject <ZZCacheProtocol> __AS_SINGLETON
+@interface ZZUserDefaults : NSObject <ZZCacheProtocol> __AS_SINGLETON
 
 @end
 
-@interface NSObject(XYUserDefaults)
+@interface NSObject(ZZUserDefaults)
 
 // for key value
 

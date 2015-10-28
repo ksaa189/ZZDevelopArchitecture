@@ -8,7 +8,7 @@
 
 #import "ZZUserDefaults.h"
 
-@implementation XYUserDefaults __DEF_SINGLETON
+@implementation ZZUserDefaults __DEF_SINGLETON
 
 - (BOOL)hasObjectForKey:(id)key
 {
@@ -55,7 +55,7 @@
 
 @end
 
-@implementation NSObject(XYUserDefaults)
+@implementation NSObject(ZZUserDefaults)
 
 + (NSString *)persistenceKey:(NSString *)key
 {
@@ -82,7 +82,7 @@
     
     key = [self persistenceKey:key];
     
-    return [[XYUserDefaults sharedInstance] objectForKey:key];
+    return [[ZZUserDefaults sharedInstance] objectForKey:key];
 }
 
 + (void)userDefaultsWrite:(id)value forKey:(NSString *)key
@@ -92,7 +92,7 @@
     
     key = [self persistenceKey:key];
     
-    [[XYUserDefaults sharedInstance] setObject:value forKey:key];
+    [[ZZUserDefaults sharedInstance] setObject:value forKey:key];
 }
 
 + (void)userDefaultsRemove:(NSString *)key
@@ -102,7 +102,7 @@
     
     key = [self persistenceKey:key];
     
-    [[XYUserDefaults sharedInstance] removeObjectForKey:key];
+    [[ZZUserDefaults sharedInstance] removeObjectForKey:key];
 }
 
 - (id)userDefaultsRead:(NSString *)key
@@ -129,7 +129,7 @@
 {
     key = [self persistenceKey:key];
     
-    id value = [[XYUserDefaults sharedInstance] objectForKey:key];
+    id value = [[ZZUserDefaults sharedInstance] objectForKey:key];
     if ( value )
     {
         //return [self objectFromAny:value];
@@ -162,9 +162,9 @@
      }
      */
     if (obj) {
-        [[XYUserDefaults sharedInstance] setObject:obj forKey:key];
+        [[ZZUserDefaults sharedInstance] setObject:obj forKey:key];
     }else {
-        [[XYUserDefaults sharedInstance] removeObjectForKey:key];
+        [[ZZUserDefaults sharedInstance] removeObjectForKey:key];
     }
 }
 
@@ -177,7 +177,7 @@
 {
     key = [self persistenceKey:key];
     
-    [[XYUserDefaults sharedInstance] removeObjectForKey:key];
+    [[ZZUserDefaults sharedInstance] removeObjectForKey:key];
 }
 
 @end
