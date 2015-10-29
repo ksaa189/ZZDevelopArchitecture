@@ -90,6 +90,8 @@
 		51C12F471B74B2D400140948 /* ZZViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C12F461B74B2D400140948 /* ZZViewControllerManager.m */; };
 		51C12F4A1B74B2E800140948 /* ZZViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C12F491B74B2E800140948 /* ZZViewLayout.m */; };
 		51C12F4F1B74B9CC00140948 /* ZZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C12F4E1B74B9CC00140948 /* ZZCommon.m */; };
+		51CEA9241BE22408008CD00B /* ZZAutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CEA9231BE22408008CD00B /* ZZAutoCoding.m */; settings = {ASSET_TAGS = (); }; };
+		51CEA9271BE2244A008CD00B /* ZZFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CEA9261BE2244A008CD00B /* ZZFileCache.m */; settings = {ASSET_TAGS = (); }; };
 		51FAD97A1B832C5100504A6E /* ZZUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAD9791B832C5100504A6E /* ZZUserDefaults.m */; };
 /* End PBXBuildFile section */
 
@@ -270,6 +272,10 @@
 		51C12F4C1B74B99900140948 /* ZZCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCommonDefine.h; sourceTree = "<group>"; };
 		51C12F4D1B74B9CC00140948 /* ZZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCommon.h; sourceTree = "<group>"; };
 		51C12F4E1B74B9CC00140948 /* ZZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCommon.m; sourceTree = "<group>"; };
+		51CEA9221BE22408008CD00B /* ZZAutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAutoCoding.h; sourceTree = "<group>"; };
+		51CEA9231BE22408008CD00B /* ZZAutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAutoCoding.m; sourceTree = "<group>"; };
+		51CEA9251BE2244A008CD00B /* ZZFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFileCache.h; sourceTree = "<group>"; };
+		51CEA9261BE2244A008CD00B /* ZZFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFileCache.m; sourceTree = "<group>"; };
 		51FAD9781B832C5100504A6E /* ZZUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZUserDefaults.h; sourceTree = "<group>"; };
 		51FAD9791B832C5100504A6E /* ZZUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZUserDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,6 +362,10 @@
 			children = (
 				511BF0B61B6B6EEC00DEBF46 /* ZZMemoryCache.h */,
 				511BF0B71B6B6EEC00DEBF46 /* ZZMemoryCache.m */,
+				51CEA9251BE2244A008CD00B /* ZZFileCache.h */,
+				51CEA9261BE2244A008CD00B /* ZZFileCache.m */,
+				51CEA9221BE22408008CD00B /* ZZAutoCoding.h */,
+				51CEA9231BE22408008CD00B /* ZZAutoCoding.m */,
 				511BF0B91B6B6F2100DEBF46 /* ZZCacheProtocol.h */,
 				51FAD9781B832C5100504A6E /* ZZUserDefaults.h */,
 				51FAD9791B832C5100504A6E /* ZZUserDefaults.m */,
@@ -749,6 +759,7 @@
 				51A75F8D1BCF879100977EF7 /* ZZ_Cache.m in Sources */,
 				51A75F991BCF8A2F00977EF7 /* ZZ_Extension_Foudation.m in Sources */,
 				51B592EF1B847DAE009F0F53 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				51CEA9271BE2244A008CD00B /* ZZFileCache.m in Sources */,
 				51B592F11B847DAE009F0F53 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				511BF0AB1B6B68D900DEBF46 /* NSNumber+ZZ.m in Sources */,
 				5194EDB91B8DB90000471912 /* LKDBHelper+ZZ.m in Sources */,
@@ -786,6 +797,7 @@
 				511BF0BE1B6B75E300DEBF46 /* UIView+ZZ.m in Sources */,
 				51799A861B4BD97500E95A05 /* ZZUnitTest.m in Sources */,
 				5194ED701B8DA83200471912 /* ZZRequestHelper.m in Sources */,
+				51CEA9241BE22408008CD00B /* ZZAutoCoding.m in Sources */,
 				51A75F871BCF862000977EF7 /* ZZ_Laroratory.m in Sources */,
 				511BF0C11B6B7A5900DEBF46 /* UIWebView+ZZ.m in Sources */,
 				511BF0A81B6B68D900DEBF46 /* NSArray+ZZ.m in Sources */,

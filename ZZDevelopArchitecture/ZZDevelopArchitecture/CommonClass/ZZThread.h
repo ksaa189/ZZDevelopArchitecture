@@ -9,61 +9,39 @@
 #import "ZZDevelopPreDefine.h"
 
 #pragma mark -
-// 主队列
-#undef	dispatch_async_foreground
-#define dispatch_async_foreground( block ) \
-dispatch_async( dispatch_get_main_queue(), block )
 
-#undef	dispatch_after_foreground
-#define dispatch_after_foreground( seconds, block ) \
-{ \
-dispatch_time_t __time = dispatch_time( DISPATCH_TIME_NOW, seconds * 1ull * NSEC_PER_SEC ); \
-dispatch_after( __time, dispatch_get_main_queue(), block ); \
-}
-
-// 自己建的后台并行队列
-#undef	dispatch_async_background
-#define dispatch_async_background( block )      dispatch_async_background_concurrent( block )
-
-#undef	dispatch_async_background_concurrent
-#define dispatch_async_background_concurrent( block ) \
-dispatch_async( [ZZGCD sharedInstance].backConcurrentQueue, block )
-
-#undef	dispatch_after_background_concurrent
-#define dispatch_after_background_concurrent( seconds, block ) \
-{ \
-dispatch_time_t __time = dispatch_time( DISPATCH_TIME_NOW, seconds * 1ull * NSEC_PER_SEC ); \
-dispatch_after( __time, [ZZGCD sharedInstance].backConcurrentQueue, block ); \
-}
-
-// 自己建的后台串行队列
-#undef	dispatch_async_background_serial
-#define dispatch_async_background_serial( block ) \
-dispatch_async( [ZZGCD sharedInstance].backSerialQueue, block )
-
-#undef	dispatch_after_background_serial
-#define dispatch_after_background_serial( seconds, block ) \
-{ \
-dispatch_time_t __time = dispatch_time( DISPATCH_TIME_NOW, seconds * 1ull * NSEC_PER_SEC ); \
-dispatch_after( __time, [ZZGCD sharedInstance].backSerialQueue, block ); \
-}
-
-// 自己建写的文件用的串行队列
-#undef	dispatch_async_background_writeFile
-#define dispatch_async_background_writeFile( block ) \
-dispatch_async( [ZZGCD sharedInstance].writeFileQueue, block )
-
-
-// barrier
-#undef	dispatch_barrier_async_foreground
-#define dispatch_barrier_async_foreground( seconds, block ) \
-dispatch_barrier_async( [ZZGCD sharedInstance].backConcurrentQueue, ^{   \
-dispatch_async_foreground( block );   \
+// 提交
+#define dispatch_submit \
 });
 
-#undef	dispatch_barrier_async_background_concurrent
-#define dispatch_barrier_async_background_concurrent( seconds, block ) \
-dispatch_barrier_async( [ZZGCD sharedInstance].backConcurrentQueue, block )
+// 主队列
+#define dispatch_foreground   \
+dispatch_async( dispatch_get_main_queue(), ^{
+
+#define dispatch_after_foreground( __seconds ) \
+dispatch_after( [ZZGCD seconds:__seconds], dispatch_get_main_queue(), ^{
+
+// 后台并行队列
+#define dispatch_background_concurrent    \
+dispatch_async( [ZZGCD sharedInstance].backConcurrentQueue, ^{
+
+#define dispatch_after_background_concurrent( __seconds ) \
+dispatch_after( [ZZGCD seconds:__seconds], [ZZGCD sharedInstance].backConcurrentQueue, ^{
+
+// barrier
+#define dispatch_barrier_background_concurrent    \
+dispatch_barrier_async( [ZZGCD sharedInstance].backConcurrentQueue, ^{
+
+// 后台串行队列
+#define dispatch_background_serial        \
+dispatch_async( [ZZGCD sharedInstance].backSerialQueue, ^{
+
+#define dispatch_after_background_serial( __seconds ) \
+dispatch_after( [ZZGCD seconds:__seconds], [ZZGCD sharedInstance].backSerialQueue, ^{
+
+// 写的文件用的串行队列
+#define dispatch_background_writeFile     \
+dispatch_async( [ZZGCD sharedInstance].writeFileQueue, ^{
 
 #pragma mark -
 

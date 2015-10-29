@@ -10,7 +10,8 @@
 #import "ZZMemoryCache.h"
 #import "ZZCacheProtocol.h"
 #import "ZZUserDefaults.h"
-
+#import "ZZFileCache.h"
+#import "ZZAutoCoding.h"
 
 
 @interface ZZ_Cache : NSObject
