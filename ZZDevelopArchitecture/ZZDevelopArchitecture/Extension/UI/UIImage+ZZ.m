@@ -136,7 +136,9 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float radius
     {
         return [UIImage imageWithContentsOfFile:path];
     }
-    
+    if (name) {//防止工程中文件命名不准确等问题
+        return [UIImage imageNamed:name];
+    }
     return nil;
 }
 
