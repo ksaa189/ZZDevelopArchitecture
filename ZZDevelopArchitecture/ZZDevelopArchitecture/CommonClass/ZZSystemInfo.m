@@ -7,7 +7,8 @@
 //
 
 #import "ZZSystemInfo.h"
-
+#include <ifaddrs.h>
+#include <arpa/inet.h>
 @interface ZZSystemInfo()
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
 @end
@@ -223,7 +224,7 @@
 - (NSString *)localHost
 {
     NSString *address = @"error";
-    /*//因为会报错 所以暂时屏蔽
+  
     struct ifaddrs *interfaces = NULL;
     struct ifaddrs *temp_addr = NULL;
     int success = 0;
@@ -249,7 +250,7 @@
     }
     // Free memory
     freeifaddrs(interfaces);
-    */
+    
     return address;
 }
 
