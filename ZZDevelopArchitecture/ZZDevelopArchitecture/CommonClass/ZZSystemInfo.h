@@ -18,19 +18,17 @@
 
 #pragma mark -
 
-#define IOS9_OR_LATER		[[ZZSystemInfo sharedInstance] isOsVersionOrLater:@"9.0"]
-#define IOS8_OR_LATER		[[ZZSystemInfo sharedInstance] isOsVersionOrLater:@"8.0"]
-#define IOS7_OR_LATER		[[ZZSystemInfo sharedInstance] isOsVersionOrLater:@"7.0"]
-#define IOS6_OR_LATER		[[ZZSystemInfo sharedInstance] isOsVersionOrLater:@"6.0"]
-#define IOS5_OR_LATER		[[ZZSystemInfo sharedInstance] isOsVersionOrLater:@"5.0"]
-#define IOS4_OR_LATER		[[ZZSystemInfo sharedInstance] isOsVersionOrLater:@"4.0"]
+#define IOS9_OR_LATER		[[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0
+#define IOS8_OR_LATER		[[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+#define IOS7_OR_LATER		[[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
+#define IOS6_OR_LATER		[[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0
 
-#define IOS9_OR_EARLIER		[[ZZSystemInfo sharedInstance] isOsVersionOrEarlier:@"9.0"]
-#define IOS8_OR_EARLIER		[[ZZSystemInfo sharedInstance] isOsVersionOrEarlier:@"8.0"]
-#define IOS7_OR_EARLIER		[[ZZSystemInfo sharedInstance] isOsVersionOrEarlier:@"7.0"]
-#define IOS6_OR_EARLIER		[[ZZSystemInfo sharedInstance] isOsVersionOrEarlier:@"6.0"]
-#define IOS5_OR_EARLIER		[[ZZSystemInfo sharedInstance] isOsVersionOrEarlier:@"5.0"]
-#define IOS4_OR_EARLIER		[[ZZSystemInfo sharedInstance] isOsVersionOrEarlier:@"4.0"]
+
+#define IOS9_OR_EARLIER		[[[UIDevice currentDevice] systemVersion] floatValue] <= 9.0
+#define IOS8_OR_EARLIER		[[[UIDevice currentDevice] systemVersion] floatValue] <= 8.0
+#define IOS7_OR_EARLIER		[[[UIDevice currentDevice] systemVersion] floatValue] <= 7.0
+#define IOS6_OR_EARLIER		[[[UIDevice currentDevice] systemVersion] floatValue] <= 6.0
+
 
 
 @interface ZZSystemInfo : NSObject __AS_SINGLETON
