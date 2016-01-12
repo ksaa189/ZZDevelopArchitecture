@@ -31,25 +31,32 @@
  * All delegate dispatching is done asynchronously (which is a critically important architectural design).
  **/
 
+
+//这个类是解决delegate不能添加多个的情况，可以添加进队列中然后进行管理
+//
 @interface ZZMulticastDelegate : NSObject
-
+//添加一个delegate到队列中
 - (void)addDelegate:(id)delegate delegateQueue:(dispatch_queue_t)delegateQueue;
+//移除一个delegate从队列中
 - (void)removeDelegate:(id)delegate delegateQueue:(dispatch_queue_t)delegateQueue;
+//这个函数好像没意义啊
 - (void)removeDelegate:(id)delegate;
-
+//移除所有delegate
 - (void)removeAllDelegates;
-
+//管理的delegate数量
 - (NSUInteger)count;
+//某个类的的delegate数量
 - (NSUInteger)countOfClass:(Class)aClass;
+//delegate响应sel的数量
 - (NSUInteger)countForSelector:(SEL)aSelector;
-
+//计数器
 - (ZZMulticastDelegateEnumerator *)delegateEnumerator;
 
 @end
 
 
 @interface ZZMulticastDelegateEnumerator : NSObject
-
+//
 - (NSUInteger)count;
 - (NSUInteger)countOfClass:(Class)aClass;
 - (NSUInteger)countForSelector:(SEL)aSelector;

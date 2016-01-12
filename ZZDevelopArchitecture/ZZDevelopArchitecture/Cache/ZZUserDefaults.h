@@ -16,7 +16,7 @@
 @interface NSObject(ZZUserDefaults)
 
 // for key value
-
+// 用NSUserDefault存储，注意命名规则内部会做处理，所以需要进行配对使用
 + (id)userDefaultsRead:(NSString *)key;
 - (id)userDefaultsRead:(NSString *)key;
 
