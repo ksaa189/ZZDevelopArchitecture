@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5111E0B21C44A5C90054E8F7 /* ZZMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5111E0B11C44A5C90054E8F7 /* ZZMulticastDelegate.m */; };
 		51185A2F1B5F921B00BDFB36 /* ZZSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51185A2E1B5F921B00BDFB36 /* ZZSystemInfo.m */; };
 		51185A321B5F950E00BDFB36 /* ZZThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 51185A311B5F950E00BDFB36 /* ZZThread.m */; };
 		51185A361B5F98CD00BDFB36 /* ZZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51185A351B5F98CD00BDFB36 /* ZZTimer.m */; };
@@ -41,14 +42,14 @@
 		5194EDB51B8DB52500471912 /* NSObject+LKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194EDAF1B8DB52500471912 /* NSObject+LKDBHelper.m */; };
 		5194EDB61B8DB52500471912 /* NSObject+LKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194EDB11B8DB52500471912 /* NSObject+LKModel.m */; };
 		5194EDB91B8DB90000471912 /* LKDBHelper+ZZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194EDB81B8DB90000471912 /* LKDBHelper+ZZ.m */; };
-		51A75F871BCF862000977EF7 /* ZZ_Laroratory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F861BCF862000977EF7 /* ZZ_Laroratory.m */; settings = {ASSET_TAGS = (); }; };
-		51A75F8A1BCF870300977EF7 /* ZZ_UIModules.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F891BCF870300977EF7 /* ZZ_UIModules.m */; settings = {ASSET_TAGS = (); }; };
-		51A75F8D1BCF879100977EF7 /* ZZ_Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F8C1BCF879100977EF7 /* ZZ_Cache.m */; settings = {ASSET_TAGS = (); }; };
-		51A75F901BCF880100977EF7 /* ZZ_CommonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F8F1BCF880100977EF7 /* ZZ_CommonClass.m */; settings = {ASSET_TAGS = (); }; };
-		51A75F931BCF889F00977EF7 /* ZZ_Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F921BCF889F00977EF7 /* ZZ_Debug.m */; settings = {ASSET_TAGS = (); }; };
-		51A75F991BCF8A2F00977EF7 /* ZZ_Extension_Foudation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F981BCF8A2F00977EF7 /* ZZ_Extension_Foudation.m */; settings = {ASSET_TAGS = (); }; };
-		51A75F9F1BCF8C8200977EF7 /* ZZ_Extension_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F9E1BCF8C8200977EF7 /* ZZ_Extension_UI.m */; settings = {ASSET_TAGS = (); }; };
-		51A75FA21BCF8CC500977EF7 /* ZZDevelopArchitecture.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75FA11BCF8CC500977EF7 /* ZZDevelopArchitecture.m */; settings = {ASSET_TAGS = (); }; };
+		51A75F871BCF862000977EF7 /* ZZ_Laroratory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F861BCF862000977EF7 /* ZZ_Laroratory.m */; };
+		51A75F8A1BCF870300977EF7 /* ZZ_UIModules.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F891BCF870300977EF7 /* ZZ_UIModules.m */; };
+		51A75F8D1BCF879100977EF7 /* ZZ_Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F8C1BCF879100977EF7 /* ZZ_Cache.m */; };
+		51A75F901BCF880100977EF7 /* ZZ_CommonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F8F1BCF880100977EF7 /* ZZ_CommonClass.m */; };
+		51A75F931BCF889F00977EF7 /* ZZ_Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F921BCF889F00977EF7 /* ZZ_Debug.m */; };
+		51A75F991BCF8A2F00977EF7 /* ZZ_Extension_Foudation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F981BCF8A2F00977EF7 /* ZZ_Extension_Foudation.m */; };
+		51A75F9F1BCF8C8200977EF7 /* ZZ_Extension_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75F9E1BCF8C8200977EF7 /* ZZ_Extension_UI.m */; };
+		51A75FA21BCF8CC500977EF7 /* ZZDevelopArchitecture.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A75FA11BCF8CC500977EF7 /* ZZDevelopArchitecture.m */; };
 		51A987C31B4D1F660019684F /* ZZDebugToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A987C21B4D1F660019684F /* ZZDebugToy.m */; };
 		51A987C61B4D1FCF0019684F /* ZZAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A987C51B4D1FCF0019684F /* ZZAOP.m */; };
 		51A987C91B4D22830019684F /* ZZReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A987C81B4D22830019684F /* ZZReachability.m */; };
@@ -90,8 +91,8 @@
 		51C12F471B74B2D400140948 /* ZZViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C12F461B74B2D400140948 /* ZZViewControllerManager.m */; };
 		51C12F4A1B74B2E800140948 /* ZZViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C12F491B74B2E800140948 /* ZZViewLayout.m */; };
 		51C12F4F1B74B9CC00140948 /* ZZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C12F4E1B74B9CC00140948 /* ZZCommon.m */; };
-		51CEA9241BE22408008CD00B /* ZZAutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CEA9231BE22408008CD00B /* ZZAutoCoding.m */; settings = {ASSET_TAGS = (); }; };
-		51CEA9271BE2244A008CD00B /* ZZFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CEA9261BE2244A008CD00B /* ZZFileCache.m */; settings = {ASSET_TAGS = (); }; };
+		51CEA9241BE22408008CD00B /* ZZAutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CEA9231BE22408008CD00B /* ZZAutoCoding.m */; };
+		51CEA9271BE2244A008CD00B /* ZZFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CEA9261BE2244A008CD00B /* ZZFileCache.m */; };
 		51FAD97A1B832C5100504A6E /* ZZUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAD9791B832C5100504A6E /* ZZUserDefaults.m */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5111E0B01C44A5C90054E8F7 /* ZZMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZMulticastDelegate.h; sourceTree = "<group>"; };
+		5111E0B11C44A5C90054E8F7 /* ZZMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZMulticastDelegate.m; sourceTree = "<group>"; };
 		51185A2D1B5F921B00BDFB36 /* ZZSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSystemInfo.h; sourceTree = "<group>"; };
 		51185A2E1B5F921B00BDFB36 /* ZZSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSystemInfo.m; sourceTree = "<group>"; };
 		51185A301B5F950E00BDFB36 /* ZZThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZThread.h; sourceTree = "<group>"; };
@@ -408,6 +411,8 @@
 			children = (
 				51799A881B4BDAF300E95A05 /* ZZRuntime.h */,
 				51799A891B4BDAF300E95A05 /* ZZRuntime.m */,
+				5111E0B01C44A5C90054E8F7 /* ZZMulticastDelegate.h */,
+				5111E0B11C44A5C90054E8F7 /* ZZMulticastDelegate.m */,
 				51A987C41B4D1FCF0019684F /* ZZAOP.h */,
 				51A987C51B4D1FCF0019684F /* ZZAOP.m */,
 				51A987C71B4D22830019684F /* ZZReachability.h */,
@@ -773,6 +778,7 @@
 				51799A831B4BD34400E95A05 /* ZZPerformance.m in Sources */,
 				51AE99851B70C4B0001709BA /* UINavigationBar+ZZ.m in Sources */,
 				51C12F4A1B74B2E800140948 /* ZZViewLayout.m in Sources */,
+				5111E0B21C44A5C90054E8F7 /* ZZMulticastDelegate.m in Sources */,
 				51B592F01B847DAE009F0F53 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				51FAD97A1B832C5100504A6E /* ZZUserDefaults.m in Sources */,
 				511BF0AA1B6B68D900DEBF46 /* NSDate+ZZ.m in Sources */,
