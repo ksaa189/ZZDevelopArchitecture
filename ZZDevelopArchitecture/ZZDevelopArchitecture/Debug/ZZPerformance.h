@@ -29,8 +29,9 @@
 #pragma mark -
 
 @interface ZZPerformance : NSObject __AS_SINGLETON
-
-- (void)enter:(NSString *)tag;//根据tag 来指定enter和leave的时间，enter和leave的tag要相同
-- (void)leave:(NSString *)tag;//离开的时候会自动打印 tag间隔时间
+//根据tag 来指定enter和leave的时间，enter和leave的tag要相同
+- (void)enter:(NSString *)tag;
+//离开的时候会自动打印 tag间隔时间
+- (void)leave:(NSString *)tag;
 
 @end

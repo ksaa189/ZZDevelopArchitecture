@@ -58,10 +58,12 @@ typedef enum {
 
 #pragma mark -  MKNetworkOperation (XY)
 @interface MKNetworkOperation (XY)
-
+//上传文件
 - (id)uploadFiles:(NSDictionary *)name_path;
+//请求成功或者失败的回调
 - (id)succeed:(RequestHelper_normalRequestSucceedBlock)blockS
        failed:(RequestHelper_normalRequestFailedBlock)blockF;
+//把请求添加到队列中
 - (id)submitInQueue:(RequestHelper *)requests;
 @end
 
@@ -72,7 +74,7 @@ typedef enum {
 @interface Downloader : HttpRequest
 
 @property (nonatomic, copy) NSString *toFile;
-
+//把请求添加到队列中
 - (id)submitInQueue:(DownloadHelper *)requests;
 - (id)progress:(RequestHelper_downloadRequestProgressBlock)blockP;
 
@@ -91,7 +93,7 @@ typedef enum {
                       to:(NSString*)filePath
                   params:(id)anObject
         breakpointResume:(BOOL)isResume;
-
+//取消所有下载
 - (void)cancelAllDownloads;
 - (void)cancelDownloadWithString:(NSString *)string;
 

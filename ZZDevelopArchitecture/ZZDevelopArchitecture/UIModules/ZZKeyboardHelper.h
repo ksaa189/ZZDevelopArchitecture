@@ -28,13 +28,12 @@
 /*****************UITextField***********************/
 @interface UITextField (ToolbarOnKeyboard)
 
-//Helper functions to add Done button on keyboard.
+//在键盘界面添加一个DoneButton
 - (void)addDoneOnKeyboardWithTarget:(id)target action:(SEL)action;
 
-//Helper function to add SegmentedNextPrevious and Done button on keyboard.
+//在键盘界面添加一个上一个，下一个segment 和Done Button
 - (void)addPreviousNextDoneOnKeyboardWithTarget:(id)target previousAction:(SEL)previousAction nextAction:(SEL)nextAction doneAction:(SEL)doneAction;
-
-//Helper methods to enable and desable previous next buttons.
+//设置上一个，下一个segment 状态
 - (void)setEnablePrevious:(BOOL)isPreviousEnabled next:(BOOL)isNextEnabled;
 
 @end
