@@ -50,7 +50,7 @@
 - (id)deepCopy1; // 这个其实就是把自己通过NSKeyArchive打包一下
 
 #pragma mark- associated
-//一些关联函数 暂时还没明白 有什么用和如何使用
+//通过runtime的方式进行关联，类似key value的形式，具有内存属性（copy，retain，assign）
 - (id)getAssociatedObjectForKey:(const char *)key;
 - (id)copyAssociatedObject:(id)obj forKey:(const char *)key;
 - (id)retainAssociatedObject:(id)obj forKey:(const char *)key;
