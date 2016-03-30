@@ -26,6 +26,7 @@ typedef void(^ZZTimer_block)(ZZTimer *timer, NSTimeInterval duration);
 /**
  * 说明
  * ZZTimer 是每个对象可以拥有多个,建议不要用太多,在对象释放的时候会自动停止
+    注意：原生的NStimer 会保留引用对象，这样容易造成循环引用。建议采用封装的Timer
  */
 @interface ZZTimer : NSObject
 
