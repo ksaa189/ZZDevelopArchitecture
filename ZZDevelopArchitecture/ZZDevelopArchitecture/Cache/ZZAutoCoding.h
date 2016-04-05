@@ -16,6 +16,7 @@
 #pragma mark- category AutoCoding
 // copy frome https://github.com/nicklockwood/AutoCoding
 // 序列化 2.2
+//因为如果使用model做存储，需要把model中的属性做coding，这个就是能够自动进行coding
 @interface NSObject (AutoCoding) <NSSecureCoding>
 
 //coding
