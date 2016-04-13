@@ -34,6 +34,14 @@ typedef void(^ZZTimer_block)(ZZTimer *timer, NSTimeInterval duration);
 
 @end
 
+@interface NSTimer (ZZExtension)
+
+- (void)pauseTimer;
+- (void)continueTimer;
+
+@end
+
+
 
 #pragma mark - ZZTimerContainer
 

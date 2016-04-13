@@ -55,6 +55,16 @@ void (*ZZTimer_action)(id, SEL, id, NSTimeInterval) = (void (*)(id, SEL, id, NST
 
 @end
 
+@implementation NSTimer (ZZExtension)
+
+- (void)pauseTimer {
+     [self setFireDate:[NSDate distantFuture]];
+}
+- (void)continueTimer {
+     [self setFireDate:[NSDate date]];
+}
+
+@end
 
 #pragma mark - ZZTimerContainer
 @interface ZZTimerContainer : NSObject
