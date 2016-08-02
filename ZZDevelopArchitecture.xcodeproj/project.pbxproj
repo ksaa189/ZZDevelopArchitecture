@@ -329,7 +329,7 @@
 			path = Basis;
 			sourceTree = "<group>";
 		};
-		511BF0AE1B6B68EB00DEBF46 /* UI */ = {
+		511BF0AE1B6B68EB00DEBF46 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				511BF0AF1B6B691100DEBF46 /* UIColor+ZZ.h */,
@@ -357,6 +357,7 @@
 				518327CC1B7361740073BC21 /* UIViewController+ZZ.h */,
 				518327CD1B7361740073BC21 /* UIViewController+ZZ.m */,
 			);
+			name = UIKit;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -555,7 +556,7 @@
 		51AD6B001B43E29600819367 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				511BF0AE1B6B68EB00DEBF46 /* UI */,
+				511BF0AE1B6B68EB00DEBF46 /* UIKit */,
 				511BF09B1B6B68D900DEBF46 /* Foudation */,
 				51A75F971BCF8A2F00977EF7 /* ZZ_Extension_Foudation.h */,
 				51A75F981BCF8A2F00977EF7 /* ZZ_Extension_Foudation.m */,
