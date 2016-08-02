@@ -10,7 +10,7 @@
 #import "ZZDevelopPreDefine.h"
 #import "NSObject+ZZ.h"
 
-DUMMY_CLASS(NSDate_ZZ);
+
 
 #define NSDate_key_stringCache	"NSDate.stringCache"
 

@@ -9,7 +9,6 @@
 #import "ZZDevelopPreDefine.h"
 
 
-DUMMY_CLASS(NSArray_ZZ);//这个有什么用？？
 
 static const void *__XYRetainNoOp(CFAllocatorRef allocator, const void *value) { return value; }
 static void __XYReleaseNoOp(CFAllocatorRef allocator, const void *value) { }

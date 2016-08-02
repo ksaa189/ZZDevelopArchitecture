@@ -23,7 +23,6 @@
 #import "ZZDevelopPreDefine.h"
 #import "NSObject+ZZ.h"
 
-DUMMY_CLASS(UIActionSheet_ZZ);
 
 @implementation UIActionSheet (ZZ)
 - (void)handlerClickedButton:(UIActionSheet_block_self_index)aBlock

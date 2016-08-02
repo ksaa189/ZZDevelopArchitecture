@@ -16,7 +16,6 @@
 static NSDictionary *ZZ_DicControlEventString = nil;
 static NSDictionary *ZZ_DicControlStringEvent = nil;
 
-DUMMY_CLASS(UIControl_ZZ);
 
 @implementation UIControl (ZZ)
 

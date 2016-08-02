@@ -10,7 +10,6 @@
 #import <CommonCrypto/CommonCrypto.h>
 #import "ZZDevelopPreDefine.h"
 
-DUMMY_CLASS(NSData_ZZ);
 
 @implementation NSData (ZZ)
 

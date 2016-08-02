@@ -28,7 +28,6 @@
 #define UITableViewCell_key_rowHeight	"UITableViewCell.rowHeight"
 
 
-DUMMY_CLASS(NSObject_XY);
 
 
 @interface NSObject(XYPrivate)

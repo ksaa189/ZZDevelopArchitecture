@@ -12,7 +12,6 @@
 #import "UIImage+ZZ.h"
 #import "NSObject+ZZ.h"
 
-DUMMY_CLASS(UIView_ZZ);
 
 #define UIView_key_tapBlock       "UIView.tapBlock"
 #define UIView_key_longPressBlock "UIView.longPressBlock"

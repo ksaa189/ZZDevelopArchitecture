@@ -11,7 +11,6 @@
 #import "NSData+ZZ.h"
 #import "ZZDevelopPreDefine.h"
 
-DUMMY_CLASS(NSString_XY);
 
 @implementation NSString (XY)
 

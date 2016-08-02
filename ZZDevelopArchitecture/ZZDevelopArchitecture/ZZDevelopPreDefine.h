@@ -135,22 +135,7 @@ dispatch_once( &once_##__name , ^{
 // ----------------------------------
 // Category
 // ----------------------------------
-//使用示例:
-//UIColor+YYAdd.m
-/*
- #import "UIColor+YYAdd.h"
- DUMMY_CLASS(UIColor+YYAdd)
- 
- @implementation UIColor(YYAdd)
- ...
- @end
- */
 
-#ifndef DUMMY_CLASS//虚设的类 这是什么意思 ？？？
-#define DUMMY_CLASS(UNIQUE_NAME) \
-@interface DUMMY_CLASS_##UNIQUE_NAME : NSObject @end \
-@implementation DUMMY_CLASS_##UNIQUE_NAME @end
-#endif
 
 
 // ----------------------------------

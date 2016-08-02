@@ -25,8 +25,6 @@
 #import "ZZDevelopPreDefine.h"
 
 
-DUMMY_CLASS(UIAlertView_ZZ);
-
 @implementation UIAlertView (ZZ)
 
 - (void)handlerClickedButton:(UIAlertView_block_self_index)aBlock
