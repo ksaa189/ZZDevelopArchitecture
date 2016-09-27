@@ -19,6 +19,8 @@ typedef void(^UIViewController_block_view) (UIView *view);
 - (void)pushVC:(NSString *)vcName;
 - (void)pushVC:(NSString *)vcName object:(id)object;
 - (void)popVC;
+//返回到上一个不是自己的VC
+- (void)popToLastViewControllerAnimated:(BOOL)animated;
 
 // 模态 带导航控制器
 - (void)modalVC:(NSString *)vcName withNavigationVC:(NSString *)navName;

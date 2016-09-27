@@ -58,6 +58,22 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+- (void)popToLastViewControllerAnimated:(BOOL)animated {
+    NSArray* temp = [self.navigationController.viewControllers.reverseObjectEnumerator allObjects];
+    for (int i = 0 ;i < temp.count;i++) {
+        UIViewController* tempVC = temp[i];
+        if (![tempVC isKindOfClass:[self class]]) {
+            [self.navigationController popToViewController:tempVC animated:YES];
+            break;
+        }
+    }
+
+}
+
+
+
+
+
 
 - (void)modalVC:(NSString *)vcName withNavigationVC:(NSString *)navName
 {
